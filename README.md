@@ -39,12 +39,12 @@ gRPC의 Protocol Buffer Description은 각 repo의 ./pb
 | [![Screenshot of store homepage](./docs/img/online-boutique-frontend-1.png)](./docs/img/online-boutique-frontend-1.png) | [![Screenshot of checkout screen](./docs/img/online-boutique-frontend-2.png)](./docs/img/online-boutique-frontend-2.png) |
 ## Tech Stack
 
-- **[Kubernetes](https://kubernetes.io)/AWS EKS :**
+- **[Kubernetes](https://kubernetes.io)/AWS EKS**
 - **[gRPC](https://grpc.io)** 
 - **[Istio](https://istio.io):** service mesh.
 - **[OpenCensus](https://opencensus.io/) Tracing:** 
 - **[Skaffold](https://skaffold.dev):** Kubernetes 개발자도구
-- **[Locust](https://locust.io/):** load generator.
+- **[Locust](https://locust.io/):** load generator
 
 ## 사전 준비
 ### AWS EKS provisioning with budget config
@@ -59,7 +59,7 @@ kubectl apply -f redis.yaml
 ```
 
 ## CircleCI 환경변수
-###context
+### context
 * dockerhub
   * $DOCKERHUB_PASS
   * $DOCKERHUB_USERNAME
