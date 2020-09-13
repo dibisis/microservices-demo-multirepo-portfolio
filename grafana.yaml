@@ -1,0 +1,18 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+      - name: Prometheus
+        type: prometheus
+        url: http://prometheus-server.prometheus.svc.cluster.local
+        access: proxy
+        isDefault: true
+#kubectl create namespace grafana
+#helm repo add grafana https://grafana.github.io/helm-charts
+#helm install grafana grafana/grafana \
+#    --namespace grafana \
+#    --set persistence.storageClassName="gp2" \
+#    --set persistence.enabled=true \
+#    --set adminPassword='dibisis-msa-demo' \
+#    --values grafana.yaml \
+#    --set service.type=LoadBalancer
